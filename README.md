@@ -106,14 +106,18 @@ Gereksinimler
 * Python 3.8+
 * Google Colab (önerilen) veya lokal Python ortamı
 * Google Gemini API Key (ücretsiz)
-Adım 1: Repository'yi Klonlayın
+
+  
+**Adım 1:** Repository'yi Klonlayın
 git clone https://github.com/KULLANICI_ADINIZ/pediatri-hemsirelik-chatbot.git
 cd pediatri-hemsirelik-chatbot
-Adım 2: API Key Alın
+
+**Adım 2:** API Key Alın
 1. Google AI Studio adresine gidin
 2. "Create API Key" butonuna tıklayın
 3. API key'inizi kopyalayın
-Adım 3: Google Colab'da Çalıştırma (Önerilen)
+
+**Adım 3:** Google Colab'da Çalıştırma (Önerilen)
 A. Colab'da Notebook'u Açın
 File → Open notebook → GitHub tab → URL'nizi yapıştırın
 B. API Key'i Colab Secrets'e Ekleyin
@@ -125,7 +129,8 @@ B. API Key'i Colab Secrets'e Ekleyin
 C. Notebook'u Çalıştırın
 # Tüm hücreleri sırayla çalıştırın (Runtime → Run all)
 # Son hücrede Gradio linki çıkacak
-Adım 4: Lokal Kurulum (Opsiyonel)
+
+**Adım 4:** Lokal Kurulum (Opsiyonel)
 # Virtual environment oluştur
 python -m venv venv
 source venv/bin/activate  # Windows: venv\Scripts\activate
@@ -140,18 +145,19 @@ python app.py
 **1. Web Arayüzü Özellikleri**
 
 **Ana Ekran**
-┌──────────────────────────────────────────────┐
-│   👶 Pediatri Hemşireliği Klinik Kılavuz    │
-├──────────────────────────────────────────────┤
-│                                              │
-│  [Sohbet Geçmişi Alanı]                     │
-│                                              │
-│  ┌────────────────────────────────────────┐ │
-│  │ Sorunuzu yazın...           [📤 Gönder]│ │
-│  └────────────────────────────────────────┘ │
-│                                              │
-│  [🗑️ Sohbeti Temizle]                      │
-└──────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────┐
+     👶 Pediatri Hemşireliği Klinik Kılavuz    
+├─────────────────────────────────────────┤
+│                                              
+│  [Sohbet Geçmişi Alanı]                     
+│                                              
+│┌────────────────────────────────────────┐ 
+││ Sorunuzu yazın...           [📤 Gönder]│ 
+│└────────────────────────────────────────┘ 
+│                                              
+│  [🗑️ Sohbeti Temizle]                     
+└─────────────────────────────────────────┘
 **Örnek Sorular (Sidebar)**
 * Yenidoğanda normal nabız kaç olmalı?
 * Bebeklerde Apgar skoru nasıl hesaplanır?
@@ -410,26 +416,41 @@ Sınırlamalar
 
 📂 Proje Yapısı
 pediatri-hemsirelik-chatbot/
+
 │
+
 ├── data/
 │   └── pediatri_hemsirelik_bilgi_dosyasi.txt  # Veri seti
 │
+
 ├── src/
+
 │   ├── data_processor.py      # Veri işleme modülü
+
 │   ├── rag_engine.py           # RAG motoru
+
 │   └── app.py                  # Gradio arayüzü
 │
+
 ├── docs/
 │   ├── DEVELOPMENT.md          # Geliştirme süreci detayları
+
 │   └── API.md                  # API dokümantasyonu (opsiyonel)
+
 │
-├── tests/
+├── tests
+
 │   └── test_rag_engine.py      # Unit testler (opsiyonel)
 │
+
 ├── .gitignore                  # Git ignore kuralları
+
 ├── requirements.txt            # Python bağımlılıkları
+
 ├── README.md                   # Bu dosya
+
 └── LICENSE                     # MIT License
+
 
 🏆 **Final Sistem Özellikleri**
 ✅ Tamamen çalışır halde 
@@ -441,6 +462,7 @@ pediatri-hemsirelik-chatbot/
 ✅ 72 saat aktif (Gradio share link)
 
 🤝 **Katkıda Bulunma**
+
 Projeye katkıda bulunmak isterseniz:
 1. Repository'yi fork edin
 2. Feature branch oluşturun (git checkout -b feature/YeniOzellik)
@@ -449,6 +471,7 @@ Projeye katkıda bulunmak isterseniz:
 5. Pull Request oluşturun
 
 Katkı Alanları:
+
 * 📝 Veri seti genişletme
 * 🐛 Bug fix
 * ✨ Yeni özellik geliştirme
@@ -467,6 +490,5 @@ Proje Linki: https://github.com/asyildirimdan/pediatri-hemsirelik-chatbot
 
 Copyright (c) 2025 [Sena YILDIRIM]
 
-⭐ Yıldız Verin!
 Bu proje size faydalı olduysa, lütfen GitHub'da yıldız verin! ⭐
 Son Güncelleme: Ekim 2025  Versiyon: 1.0.0 
